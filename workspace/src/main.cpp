@@ -88,7 +88,7 @@ void moveForward(int speed) {
     analogWrite(MOTOR_RIGHT_PWM, speed);
 }
 
-void stopMotors() {
-    analogWrite(MOTOR_LEFT_PWM, 0);
-    analogWrite(MOTOR_RIGHT_PWM, 0);
-}
+// void stopMotors() {
+//     analogWrite(MOTOR_LEFT_PWM, 0);
+//     analogWrite(MOTOR_RIGHT_PWM, 0);
+// }
