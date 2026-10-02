@@ -1,11 +1,7 @@
-Dưới đây là nội dung mẫu file `README.md` chuẩn, ngắn gọn và trực quan để dán thẳng vào repo:
 
-```markdown
 # Smart Vehicle Challenge
 
 Dự án phát triển hệ thống điều khiển cho xe thông minh (Smart Vehicle).
-
-```
 
 ---
 
