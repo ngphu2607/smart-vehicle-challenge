@@ -13,6 +13,10 @@
 #define LED_PIN 2
 
 // Định nghĩa chân điều khiển động cơ mẫu (sử dụng Driver L298N / TB6612 / L9110)
+#define MOTOR_LEFT_PWM   4
+#define MOTOR_LEFT_DIR   5
+#define MOTOR_RIGHT_PWM  6
+#define MOTOR_RIGHT_DIR  7
 
 // Hàm nguyên mẫu
 void stopMotors();
@@ -82,4 +86,10 @@ void moveForward(int speed) {
 
     digitalWrite(MOTOR_RIGHT_DIR, HIGH);
     analogWrite(MOTOR_RIGHT_PWM, speed);
+}
+void stopMotors() {
+    analogWrite(MOTOR_LEFT_PWM, 0);
+    analogWrite(MOTOR_RIGHT_PWM, 0);
+    digitalWrite(MOTOR_LEFT_DIR, LOW);
+    digitalWrite(MOTOR_RIGHT_DIR, LOW);
 }
